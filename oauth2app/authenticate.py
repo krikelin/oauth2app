@@ -9,9 +9,9 @@ from urlparse import parse_qsl
 from simplejson import dumps
 from django.conf import settings
 from django.http import HttpResponse
-from .exceptions import OAuth2Exception
-from .models import AccessToken, AccessRange, TimestampGenerator
-from .consts import REALM, AUTHENTICATION_METHOD, MAC, BEARER
+from exceptions import OAuth2Exception
+from models import AccessToken, AccessRange, TimestampGenerator
+from consts import REALM, AUTHENTICATION_METHOD, MAC, BEARER
 
 class AuthenticationException(OAuth2Exception):
     """Authentication exception base class."""
